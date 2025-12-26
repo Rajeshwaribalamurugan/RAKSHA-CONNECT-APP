@@ -1,0 +1,77 @@
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  background: #151932;
+  border-right: 1px solid #1e2742;
+  padding: 1.5rem 0;
+  flex-shrink: 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar-header:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.sidebar-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav-item:hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: #fff;
+}
+
+.nav-item.active {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  border-left-color: #3b82f6;
+}
+
+.nav-item.fire-active {
+  color: #ef4444;
+  border-left-color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.nav-item.ambulance-active {
+  color: #10b981;
+  border-left-color: #10b981;
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+}
